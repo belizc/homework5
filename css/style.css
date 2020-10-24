@@ -195,6 +195,7 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
+    flex-basis: 225px;
   }
 
   .card_big{
@@ -205,10 +206,13 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav_links{
     /*Your code here again.*/  
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -222,7 +226,21 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
+  body{
+    background: none;
+  }
+  .pricing{
+    align-items: flex-start;
+  }
+  .gallery, #gallery{
+    display: none;
+  }
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce){
+  #logo{
+    animation: none;
+  }
+}
